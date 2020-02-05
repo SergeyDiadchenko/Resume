@@ -313,8 +313,12 @@ body {
     box-shadow: 0px 4px 10px rgba(128, 128, 128, 0.1);
 }
 
+.cont-3{
+
+}
+
 .container {
-	position: relative;
+    position: relative;
     height: 50px;
     width: 300px;
     margin-top: 85px;
@@ -332,7 +336,11 @@ body {
 
     color: #333333;
 }
-
+textarea{
+    background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 1px;
+}
 .time-right {
     font-family: Arial;
     font-style: normal;
@@ -353,17 +361,23 @@ body {
 
 }
 
-.com:before {
+.com::before,
+.com::after {
     position: absolute;
     content: "";
     width: 0;
     height: 0;
     left: 20px;
-	top: 32px;
-    border-bottom: 15px solid #F2FBFF;
-    border-right: 15px solid  transparent;
-
+    top: 32px;
+    border-bottom: 15px solid #DADADA;
+    border-right: 15px solid transparent;
 }
+
+.com::after {
+    border-bottom: 15px solid #DADADA;
+    bottom: 19px;
+}
+
 
 .bg {
     position: absolute;
@@ -398,6 +412,20 @@ body {
     width: 489px;
     height: 900px;
     background: #FFFFFF;
+}
+
+.cont-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.comment-2 {
+    width: 489px;
+    height: 150px;
+    margin-top: 85px;
+    background: #F2F2F2;
+
 }
 
 @media (max-width: 360px) {
